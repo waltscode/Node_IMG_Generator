@@ -44,13 +44,13 @@ function init() {
         svg.setTextColor(answers.text_color);
         svg.setShapeColor(answers.shape_color);
 
-        // Generate the SVG content
+        // GENERATE the SVG content
         const svgContent = svg.render();
 
-        // Write the SVG content to a file
-        fs.writeFileSync('output.svg', svgContent, 'utf-8');
+        // WRITE the SVG content to a file and NAME IT
+        fs.writeFileSync('logo.svg', svgContent, 'utf-8');
 
-        console.log('SVG file generated successfully!');
+        console.log('Generated logo.svg successfully! Go check it out!');
     });
 }
 
